@@ -20,9 +20,9 @@ public class Create_table {
 				+ " per int,"
 				+ "email varchar(50))";
 		// insert record
-		String insertSQL="insert into students values(101,'Neeva Sharma',98,'abc@gmail.com'),"
-				+ "(102,'Reeva Sharma',89,'Reeva@gmail.com'),"
-				+ "(103,'Shiva Upadhyay',79,'shiva@gmail.com')";
+		String insertSQL="insert into students values(101,'Amol',98,'abc@gmail.com'),"
+				+ "(102,'akash raj',89,'Reeva@gmail.com'),"
+				+ "(103,'Alok Upadhyay',79,'shiva@gmail.com')";
 		
 		try
 		{
