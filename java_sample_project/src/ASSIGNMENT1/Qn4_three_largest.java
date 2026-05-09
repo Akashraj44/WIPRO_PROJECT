@@ -22,7 +22,7 @@ public class Qn4_three_largest {
 		        } else if (b >= a && b >= c) {
 		            System.out.println("Largest number is: " + b);
 		        } else {
-		            System.out.println("Largest number is: " + c);2
+		            System.out.println("Largest number is: " + c);
 		        }
 
 		    }

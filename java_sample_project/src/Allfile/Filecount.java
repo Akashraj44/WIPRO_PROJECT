@@ -1,5 +1,7 @@
 package Allfile;
 import java.io.BufferedReader;
+
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
@@ -42,9 +44,10 @@ public class Filecount {
 	       
 	        
 	    }
+	  String l1;
 	//count char
 	 BufferedReader br = new BufferedReader(new FileReader("Text.txt"));
-     String l1;
+    // String l1;
 
      while ((line = br.readLine()) != null) {
 

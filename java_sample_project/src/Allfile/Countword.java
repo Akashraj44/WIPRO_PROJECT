@@ -5,10 +5,11 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.IOException;
 
 public class Countword {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		File f1=new File("Text.txt");
 		f1.createNewFile();
 		// write file
@@ -33,4 +34,4 @@ public class Countword {
 
 	}
 
-}
+

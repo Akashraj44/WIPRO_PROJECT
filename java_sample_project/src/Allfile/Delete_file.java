@@ -37,7 +37,7 @@ public class Delete_file {
 				{
 					System.out.println("Failed to delete");
 				}
-				if(file.exits())
+				if(file.exists())
 				{
 					System.out.println("File not found");
 				}
@@ -46,10 +46,10 @@ public class Delete_file {
 		 
 			}
 		 
-		}
+		
 		 
 		 
 
 	}
 
-}
+

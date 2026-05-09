@@ -13,7 +13,7 @@ public class wordcnt {
 
     
         BufferedReader br = new BufferedReader(new FileReader(filePath));
-        String line;
+       String line;
 
         while ((line = br.readLine()) != null) {
             String[] words = line.split(" ");
