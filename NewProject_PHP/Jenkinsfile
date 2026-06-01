@@ -41,7 +41,7 @@ pipeline {
  
         stage('Package') {
             steps {
-                dir('TutorialsNinjaFramework') {
+                dir('NewProject_PHP') {
                     bat 'mvn package'
                 }
             }
