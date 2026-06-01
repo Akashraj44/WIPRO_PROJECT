@@ -9,8 +9,8 @@ pipeline {
  
         stage('Checkout') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/vaishali1912/SDET_wipro_2026.git'
+                git branch: 'master',
+                    url: 'https://github.com/Akashraj44/WIPRO_PROJECT.git'
             }
         }
  
