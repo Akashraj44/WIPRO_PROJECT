@@ -11,7 +11,6 @@ features =
 "src/test/resources/Feature",
 
 glue = {
-
 "Stepdefination",
 "hooks"
 

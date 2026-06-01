@@ -65,7 +65,7 @@ public class AllPages {
     // =========================
     // HOTEL SEARCH
     // =========================
-
+    By tour=By.xpath("/html/body/div[2]/div[4]/div/nav/button[2]");
     By destination =
             By.xpath("//input[@placeholder='Search By City']");
 
@@ -194,8 +194,11 @@ public class AllPages {
     // =========================
 
     public void enterDestination(String city) {
+    	driver.findElement(tour).click();
 
         wait.waitForClickable(destination);
+      //  driver.findElement(tour).click();
+  
 
         driver.findElement(destination)
               .click();
@@ -241,7 +244,8 @@ public class AllPages {
     // =========================
 
     public void clickSearchButton() {
-
+    	
+           //  driver.findElement(tour).clear();
        
             driver.findElement(searchButton).click();
 
