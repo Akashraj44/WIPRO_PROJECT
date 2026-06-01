@@ -34,7 +34,7 @@ pipeline {
  
         stage('Test') {
             steps {
-                dir('TNewProject_PHP') {
+                dir('NewProject_PHP') {
                     bat 'mvn test'
                 }
             }
