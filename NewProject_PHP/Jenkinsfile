@@ -11,30 +11,39 @@ pipeline {
             steps {
                 git branch: 'master',
                     url: 'https://github.com/Akashraj44/WIPRO_PROJECT.git'
+                    
             }
         }
  
-        stage('Build') {
+          stage('Build') {
             steps {
-                bat 'mvn clean'
+                dir('NewProject_PHP') {
+                    bat 'mvn clean'
+                }
             }
         }
  
         stage('Compile') {
             steps {
-                bat 'mvn compile'
+                dir('NewProject_PHP') {
+                    bat 'mvn compile'
+                }
             }
         }
  
         stage('Test') {
             steps {
-                bat 'mvn test'
+                dir('TNewProject_PHP') {
+                    bat 'mvn test'
+                }
             }
         }
  
         stage('Package') {
             steps {
-                bat 'mvn package'
+                dir('TutorialsNinjaFramework') {
+                    bat 'mvn package'
+                }
             }
         }
     }
@@ -49,4 +58,3 @@ pipeline {
         }
     }
 }
- 
