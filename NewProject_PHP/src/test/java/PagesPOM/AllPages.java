@@ -65,7 +65,7 @@ public class AllPages {
     // =========================
     // HOTEL SEARCH
     // =========================
-    By tour=By.xpath("/html/body/div[2]/div[4]/div/nav/button[2]");
+    By tour =By.xpath("//button[contains(.,'Tours')]");
     By destination =
             By.xpath("//input[@placeholder='Search By City']");
 
@@ -217,26 +217,34 @@ public class AllPages {
     // =========================
 
     public void enterDestination(String city) {
-    	driver.findElement(tour).click();
+
+        try {
+
+            WebElement tourBtn =
+                    driver.findElement(tour);
+
+            JavascriptExecutor js =
+                    (JavascriptExecutor) driver;
+
+            js.executeScript(
+                    "arguments[0].click();",
+                    tourBtn);
+
+        } catch (Exception e) {
+
+            System.out.println("Tour button not clickable");
+        }
 
         wait.waitForClickable(destination);
-      //  driver.findElement(tour).click();
-  
 
-        driver.findElement(destination)
-              .click();
+        WebElement dest =
+                driver.findElement(destination);
 
-        driver.findElement(destination)
-              .sendKeys(city);
+        dest.click();
+        dest.sendKeys(city);
 
-        driver.findElement(destination)
-              .sendKeys(Keys.ARROW_DOWN);
-
-        driver.findElement(destination)
-              .sendKeys(Keys.ENTER);
-
-        driver.findElement(By.tagName("body"))
-              .click();
+        dest.sendKeys(Keys.ARROW_DOWN);
+        dest.sendKeys(Keys.ENTER);
     }
 
     // =========================
