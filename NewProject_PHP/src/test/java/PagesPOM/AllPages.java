@@ -92,12 +92,16 @@ public class AllPages {
 
         try {
 
-            wait.waitForClickable(popupButton);
+            By popup =
+            By.xpath("//button[contains(text(),'I Understand')]");
 
-            driver.findElement(popupButton).click();
-        }
+            wait.waitForClickable(popup);
 
-        catch (Exception e) {
+            driver.findElement(popup).click();
+
+            Thread.sleep(2000);
+
+        } catch (Exception e) {
 
             System.out.println("Popup Not Displayed");
         }
@@ -183,10 +187,29 @@ public class AllPages {
 
     public void clickSignupButton() {
 
-        wait.waitForClickable(signupButton);
+        try {
+            closePopup();
+        } catch (Exception e) {
+        }
 
-        driver.findElement(signupButton)
-              .click();
+        try {
+
+            wait.waitForClickable(signupButton);
+
+            driver.findElement(signupButton).click();
+
+        } catch (Exception e) {
+
+            WebElement button =
+                    driver.findElement(signupButton);
+
+            JavascriptExecutor js =
+                    (JavascriptExecutor) driver;
+
+            js.executeScript(
+                    "arguments[0].click();",
+                    button);
+        }
     }
 
     // =========================
