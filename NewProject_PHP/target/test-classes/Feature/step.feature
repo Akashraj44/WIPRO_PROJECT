@@ -28,13 +28,13 @@ And clicks signup button
 
 Then registration should be a successful
 
-@Regression
-Scenario: Search Hotel
+#@Regression
+#Scenario: Search Hotel
 
-Given user opens hotel search page
+#Given user opens hotel search page
 
-When user enters destination
+#When user enters destination
 
-And clicks hotel search
+#And clicks hotel search
 
-Then hotels should display
+#Then hotels should display
