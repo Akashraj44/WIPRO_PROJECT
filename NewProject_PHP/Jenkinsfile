@@ -1,29 +1,28 @@
 pipeline {
     agent any
- 
+
     tools {
         maven 'Maven3'
         jdk 'JDK'
     }
- 
+
     stages {
- 
+
         stage('Checkout') {
             steps {
                 git branch: 'master',
                     url: 'https://github.com/Akashraj44/WIPRO_PROJECT.git'
-                    
             }
         }
- 
-          stage('Build') {
+
+        stage('Build') {
             steps {
                 dir('NewProject_PHP') {
                     bat 'mvn clean'
                 }
             }
         }
- 
+
         stage('Compile') {
             steps {
                 dir('NewProject_PHP') {
@@ -31,7 +30,7 @@ pipeline {
                 }
             }
         }
- 
+
         stage('Test') {
             steps {
                 dir('NewProject_PHP') {
@@ -39,7 +38,7 @@ pipeline {
                 }
             }
         }
- 
+
         stage('Package') {
             steps {
                 dir('NewProject_PHP') {
@@ -47,40 +46,30 @@ pipeline {
                 }
             }
         }
+
+        stage('Docker Build') {
+            steps {
+                dir('NewProject_PHP') {
+                    bat 'docker build -t cucumber-framework .'
+                }
+            }
+        }
+
+        stage('Docker Run') {
+            steps {
+                dir('NewProject_PHP') {
+                    bat 'docker run --rm cucumber-framework'
+                }
+            }
+        }
     }
-    stage('Docker Build') {
 
-    steps {
-	
-          dir('NewProject_PHP'){
-        bat 'docker build -t cucumber-framework .'
-     }
-
-    }
-
-}
-
- 
-
-stage('Docker Run') {
-
-    steps {
-	   
-          dir('NewProject_PHP'){
-        bat 'docker run --rm cucumber-framework'
-     }
-
-    }
-
-}
-
-   post {
-
+    post {
         always {
             junit allowEmptyResults: true,
-                  testResults: 'CucumberBDD2/target/junitreports/*.xml'
+                  testResults: '**/target/junitreports/*.xml'
 
-            archiveArtifacts artifacts: 'CucumberBDD2/target/*/.*',
+            archiveArtifacts artifacts: '**/target/**/*',
                              fingerprint: true
         }
 
