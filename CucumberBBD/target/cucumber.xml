@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="8.447" tests="2" skipped="0" failures="2" errors="0" timestamp="2026-06-04T06:40:09.369565100Z">
+<testcase classname="Tutorials Ninja Functionality" name="Register Login Search Add To Cart check full function - #1.1" time="3.268">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at Stepdefination.Allstep.user_clicks_my_account_menu(Allstep.java:27)
+	at ✽.user clicks My Account menu(file:///C:/Users/Akash%20raj/OneDrive/Desktop/wipro-April26/CucumberBBD/src/test/resources/features/allfunction.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given browser opens.........................................................passed
+When user clicks My Account menu............................................failed
+And user clicks Register option.............................................skipped
+And user enters first name Akash............................................skipped
+And user enters last name Raj...............................................skipped
+And user enters email akash6254154@gmail.com................................skipped
+And user enters phone number 9876543210.....................................skipped
+And user enters password 12345..............................................skipped
+And user confirms password 12345............................................skipped
+And user accepts privacy policy.............................................skipped
+And user clicks continue button.............................................skipped
+And user clicks My Account again............................................skipped
+And user clicks Login option................................................skipped
+And user enters login email akash6254154@gmail.com..........................skipped
+And user enters login password 12345........................................skipped
+And user clicks login button................................................skipped
+And user clicks search field................................................skipped
+And user enters product name iphone.........................................skipped
+And user clicks search button...............................................skipped
+And user clicks add to cart button..........................................skipped
+Then product added successfully.............................................skipped
+And user checkout product...................................................skipped
+And user remove product.....................................................skipped
+And user logout account.....................................................skipped
+Then process completed successfully.........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Tutorials Ninja Functionality" name="Register Login Search Add To Cart check full function - #1.2" time="4.364">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at Stepdefination.Allstep.user_clicks_my_account_menu(Allstep.java:27)
+	at ✽.user clicks My Account menu(file:///C:/Users/Akash%20raj/OneDrive/Desktop/wipro-April26/CucumberBBD/src/test/resources/features/allfunction.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given browser opens.........................................................passed
+When user clicks My Account menu............................................failed
+And user clicks Register option.............................................skipped
+And user enters first name Aman.............................................skipped
+And user enters last name Kumar.............................................skipped
+And user enters email test698157@gmail.com..................................skipped
+And user enters phone number 9876543211.....................................skipped
+And user enters password test123............................................skipped
+And user confirms password test123..........................................skipped
+And user accepts privacy policy.............................................skipped
+And user clicks continue button.............................................skipped
+And user clicks My Account again............................................skipped
+And user clicks Login option................................................skipped
+And user enters login email test698157@gmail.com............................skipped
+And user enters login password test123......................................skipped
+And user clicks login button................................................skipped
+And user clicks search field................................................skipped
+And user enters product name macbook........................................skipped
+And user clicks search button...............................................skipped
+And user clicks add to cart button..........................................skipped
+Then product added successfully.............................................skipped
+And user checkout product...................................................skipped
+And user remove product.....................................................skipped
+And user logout account.....................................................skipped
+Then process completed successfully.........................................skipped
+]]></system-out>
+</testcase>
+</testsuite>

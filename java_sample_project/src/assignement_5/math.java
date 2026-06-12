@@ -14,8 +14,8 @@ public class math {
 	public static void main(String[] args) {
 		math m = new math();
 
-        int sum = m.add(10, 5);
-        int diff = m.subtract(10, 5);
+        int sum = m.add(50, 10);
+        int diff = m.subtract(50, 10);
 
         System.out.println("Addition: " + sum);
         System.out.println("Subtraction: " + diff);

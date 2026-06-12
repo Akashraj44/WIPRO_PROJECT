@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="1.206" tests="7" skipped="0" failures="6" errors="0" timestamp="2026-05-26T06:06:32.145410700Z">
+<testcase classname="verify Login functionality" name="verify user is able to login with valid credentials" time="0.039">
+<failure/>
+<system-out><![CDATA[
+Given login page should be open in default browser..........................undefined
+When click on username field and add valid user username<username1>.........skipped
+And then click on password button and enter valid password<password1>.......skipped
+And now click on submit button<status>......................................skipped
+Then login successfully and redirect to home page...........................skipped
+]]></system-out>
+</testcase>
+<testcase classname="verify Login functionality" name="" time="0.001">
+</testcase>
+<testcase classname="Verify Registration functionality" name="Verify user registration" time="0.006">
+<failure/>
+<system-out><![CDATA[
+Given registration page should be open......................................undefined
+When enter valid username...................................................skipped
+And enter valid password....................................................skipped
+And enter valid confirm password............................................skipped
+And click on register button................................................skipped
+Then registration should be successful......................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Tutorials Ninja Functionality" name="Register Login Search Add To Cart check full function - #1.1" time="0.074">
+<failure/>
+<system-out><![CDATA[
+Given browser opens.........................................................undefined
+When user clicks My Account menu............................................skipped
+And user clicks Register option.............................................skipped
+And user enters first name Akash............................................skipped
+And user enters last name Raj...............................................skipped
+And user enters email akash19904936@gmail.com...............................skipped
+And user enters phone number 9876543210.....................................skipped
+And user enters password 12345..............................................skipped
+And user confirms password 12345............................................skipped
+And user accepts privacy policy.............................................skipped
+And user clicks continue button.............................................skipped
+And user clicks My Account again............................................skipped
+And user clicks Login option................................................skipped
+And user enters login email akash19904936@gmail.com.........................skipped
+And user enters login password 12345........................................skipped
+And user clicks login button................................................skipped
+And user clicks search field................................................skipped
+And user enters product name iphone.........................................skipped
+And user clicks search button...............................................skipped
+And user clicks add to cart button..........................................skipped
+Then product added successfully.............................................skipped
+And user checkout product...................................................skipped
+And user remove product.....................................................skipped
+And user logout account.....................................................skipped
+Then process completed successfully.........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Tutorials Ninja Functionality" name="Register Login Search Add To Cart check full function - #1.2" time="0.076">
+<failure/>
+<system-out><![CDATA[
+Given browser opens.........................................................undefined
+When user clicks My Account menu............................................skipped
+And user clicks Register option.............................................skipped
+And user enters first name Aman.............................................skipped
+And user enters last name Kumar.............................................skipped
+And user enters email test1256023@gmail.com.................................skipped
+And user enters phone number 9876543211.....................................skipped
+And user enters password test123............................................skipped
+And user confirms password test123..........................................skipped
+And user accepts privacy policy.............................................skipped
+And user clicks continue button.............................................skipped
+And user clicks My Account again............................................skipped
+And user clicks Login option................................................skipped
+And user enters login email test1256023@gmail.com...........................skipped
+And user enters login password test123......................................skipped
+And user clicks login button................................................skipped
+And user clicks search field................................................skipped
+And user enters product name macbook........................................skipped
+And user clicks search button...............................................skipped
+And user clicks add to cart button..........................................skipped
+Then product added successfully.............................................skipped
+And user checkout product...................................................skipped
+And user remove product.....................................................skipped
+And user logout account.....................................................skipped
+Then process completed successfully.........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Tutorials Ninja Functionality" name="Register Login Search Add To Cart check full function - #1.3" time="0.037">
+<failure/>
+<system-out><![CDATA[
+Given browser opens.........................................................undefined
+When user clicks My Account menu............................................skipped
+And user clicks Register option.............................................skipped
+And user enters first name Ravi.............................................skipped
+And user enters last name Singh.............................................skipped
+And user enters email ravi56101@gmail.com...................................skipped
+And user enters phone number 9876543212.....................................skipped
+And user enters password 12345..............................................skipped
+And user confirms password 12345............................................skipped
+And user accepts privacy policy.............................................skipped
+And user clicks continue button.............................................skipped
+And user clicks My Account again............................................skipped
+And user clicks Login option................................................skipped
+And user enters login email ravi56101@gmail.com.............................skipped
+And user enters login password 12345........................................skipped
+And user clicks login button................................................skipped
+And user clicks search field................................................skipped
+And user enters product name iphone.........................................skipped
+And user clicks search button...............................................skipped
+And user clicks add to cart button..........................................skipped
+Then product added successfully.............................................skipped
+And user checkout product...................................................skipped
+And user remove product.....................................................skipped
+And user logout account.....................................................skipped
+Then process completed successfully.........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Verify Search functionalit" name="Verify search operation" time="0.006">
+<failure/>
+<system-out><![CDATA[
+Given login page should be open in default browser..........................undefined
+When click on username field and add valid user username....................skipped
+And then click on password button and enter valid password..................skipped
+And now click on submit button..............................................skipped
+Given home page should be open..............................................skipped
+When click on search field and enter keyword................................skipped
+And click search button.....................................................skipped
+Then search result should be displayed......................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
